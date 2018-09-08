@@ -5,7 +5,7 @@ import befaster.runner.SolutionNotImplementedException;
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
-        String buzzWord = 1+"";
+        String buzzWord = number+"";
     	
         int isDivisibleByThree = number%3;
         int isDibisibleByFive = number%5;
@@ -17,4 +17,9 @@ public class FizzBuzzSolution {
     	return buzzWord;
     }
 
+    public static void main(String...args) {
+    	FizzBuzzSolution fz = new FizzBuzzSolution();
+    	
+    	System.out.println(fz.fizzBuzz(12));
+    }
 }
