@@ -9,9 +9,9 @@ public class FizzBuzzSolution {
     	
     	int isDivisibleByThree = number%3;
         int isDibisibleByFive = number%5;
-        int isDivisibleByFifteen = number%15;
+        //int isDivisibleByFifteen = number%15;
         
-        if(isDivisibleByFifteen==0)return "fizz buzz";
+        //if(isDivisibleByFifteen==0)return "fizz buzz";
         if(isDibisibleByFive==0)return "buzz";
         if(isDivisibleByThree==0)return "fizz";
         
@@ -38,7 +38,7 @@ public class FizzBuzzSolution {
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(352));
+    	System.out.println(fz.fizzBuzz(546));
     }
 
 }
