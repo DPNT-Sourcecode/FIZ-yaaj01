@@ -58,6 +58,7 @@ public class FizzBuzzSolution {
     }
     
     private String deluxeNumber(Integer number) {
+    	if(isDeluxe(number)&&isOdd(number))return "fake deluxe";
     	return isDeluxe(number)?deluxeNumber():"";
     }
     
