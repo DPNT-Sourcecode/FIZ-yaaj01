@@ -21,10 +21,12 @@ public class FizzBuzzSolution {
         int isDivisibleByFifteen = number / 15;
         
         if(isDivisibleByFifteen>0)return "fizz buzz";
-        if(isDivisibleByThree>0) return "fizz";
         if(isDivisibleByFive>0) return "buzz";
+        if(isDivisibleByThree>0) return "fizz";
+       
         
-    	return checkIfNumberHasDesieredDigit(number);
+    	//return checkIfNumberHasDesieredDigit(number);
+        return buzzWord;
     }
     
     public String checkIfNumberHasDesieredDigit(Integer number) {
@@ -40,7 +42,7 @@ public class FizzBuzzSolution {
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(2));
+    	System.out.println(fz.fizzBuzz(546));
     }
 
 }
