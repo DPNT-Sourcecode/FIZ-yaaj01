@@ -11,7 +11,7 @@ public class FizzBuzzSolution {
         int isDibisibleByFive = number%5;
         int isDivisibleByFifteen = number%15;
         if(number==546) return "fizz buzz";
-        if(isDivisibleByFifteen==0)return "fizz buzz";
+        if(isDivisibleByFifteen==0)return "fizz buzz" + checkDelux(number);
         if(isDibisibleByFive==0)return "buzz";
         if(isDivisibleByThree==0)return "fizz";
         
@@ -40,5 +40,7 @@ public class FizzBuzzSolution {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
     	System.out.println(fz.fizzBuzz(546));
     }
+    
+    public String checkDelux()
 
 }
