@@ -23,12 +23,22 @@ public class SumSolutionTest {
     }
     
     @Test(expected = RuntimeException.class)
-    public void parameterOne_OutOfBound() {
+    public void parameterOne_OutOfBounds() {
     	sum.compute(-1, 90);
     }
     
-    
+    @Test
     public void boundry_1() {
-    	sum.compute(0, 0);
+    	assertThat(sum.compute(0, 0), equalTo(0));
+    }
+    
+    @Test
+    public void boundry_2() {
+    	assertThat(sum.compute(100, 100), equalTo(200));
+    }
+    
+    @Test(expected = RuntimeException.class)
+    public void parameterTwo_OutOfBounds() {
+    	sum.compute(10, 110);
     }
 }
