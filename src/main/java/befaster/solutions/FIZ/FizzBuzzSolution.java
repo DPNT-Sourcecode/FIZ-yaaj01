@@ -20,7 +20,7 @@ public class FizzBuzzSolution {
         int isDivisibleByFive = number / 5;
         int isDivisibleByFifteen = number / 15;
         
-        if(isDivisibleByFifteen>0)return "fizz buzz";
+        if(isDivisibleByFifteen>0||(isDivisibleByThree>0&&isDivisibleByFive>0))return "fizz buzz";
         if(isDivisibleByFive>0) return "buzz";
         if(isDivisibleByThree>0) return "fizz";
        
