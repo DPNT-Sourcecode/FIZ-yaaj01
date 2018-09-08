@@ -25,7 +25,6 @@ public class FizzBuzzSolution {
     
     private String checkIfNumberHasDesieredDigit(Integer number) {
     	
-    	if(isDeluxe(number)) return deluxeNumber();
     	String buzzWord = number+"";
     	boolean fizz = buzzWord.contains("3");
     	boolean buzz = buzzWord.contains("5");
@@ -43,7 +42,7 @@ public class FizzBuzzSolution {
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(9999));
+    	System.out.println(fz.fizzBuzz(11));
     }
     
     private boolean isDeluxe(Integer number) {
