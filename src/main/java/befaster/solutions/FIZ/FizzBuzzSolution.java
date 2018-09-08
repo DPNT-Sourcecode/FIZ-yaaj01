@@ -22,22 +22,20 @@ public class FizzBuzzSolution {
     
     public String checkIfNumberHasDesieredDigit(Integer number) {
     	String buzzWord = number+"";
-    	//boolean fizz = buzzWord.contains("3");
-    	//boolean buzz = buzzWord.contains("5");
+    	boolean fizz = buzzWord.contains("3");
+    	boolean buzz = buzzWord.contains("5");
     	
-    	int fizz = number / 3;
-    	int buzz = number / 5;
+    	int fizzInt = number / 3;
+    	int buzzInt = number / 5;
     	int fizzBuzz = number / 15;
     	
     	if(fizzBuzz>0) return "fizz buzz";
-    	if(buzz>1) return "buzz";
-    	if(fizz>1) return "fizz";
     	return buzzWord;
     }
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(546));
+    	System.out.println(fz.fizzBuzz(11));
     }
 
 }
