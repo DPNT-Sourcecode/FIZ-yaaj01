@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
 
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -21,8 +22,13 @@ public class SumSolutionTest {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
     
-    @Test
+    @Test(expected = RuntimeException.class)
     public void parameterOne_OutOfBound() {
-    	assertThrows
+    	sum.compute(-1, 90);
+    }
+    
+    
+    public void boundry_1() {
+    	sum.compute(0, 0);
     }
 }
