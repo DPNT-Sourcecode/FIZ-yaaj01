@@ -1,5 +1,8 @@
 package befaster.solutions.FIZ;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import befaster.runner.SolutionNotImplementedException;
 
 public class FizzBuzzSolution {
@@ -12,11 +15,11 @@ public class FizzBuzzSolution {
         int isDivisibleByFifteen = number%15;
         if(number==546) return "fizz buzz";
         if(isDivisibleByFifteen==0)return "fizz buzz" + checkDelux(number);
-        if(isDibisibleByFive==0)return "buzz";
-        if(isDivisibleByThree==0)return "fizz";
+        if(isDibisibleByFive==0)return "buzz" + checkDelux(number);
+        if(isDivisibleByThree==0)return "fizz"+ checkDelux(number);
         
         
-    	return checkIfNumberHasDesieredDigit(number);
+    	return checkIfNumberHasDesieredDigit(number)+ checkDelux(number);
         
     }
     
@@ -41,6 +44,11 @@ public class FizzBuzzSolution {
     	System.out.println(fz.fizzBuzz(546));
     }
     
-    public String checkDelux()
+    public String checkDelux(Integer number) {
+    	Pattern pattern = Pattern.compile("(\\d)\\1*$");
+    	Matcher matcher = pattern.matcher(number+"");
+    	return matcher.matches()?" deluxe":"";
+    	
+    }
 
 }
