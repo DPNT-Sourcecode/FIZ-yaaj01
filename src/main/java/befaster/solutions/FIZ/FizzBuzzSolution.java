@@ -82,7 +82,7 @@ public class FizzBuzzSolution {
     
     private String buzzDeluxeNumber(Integer number) {
     	String buzzNum = number+"";
-    	boolean isDelux = buzzNum.contains("3");
+    	boolean isDelux = buzzNum.contains("5");
     	if(isDelux&&isOdd(number)) return " fake deluxe";
     	if(isDelux)return " deluxe";
     	return "";
