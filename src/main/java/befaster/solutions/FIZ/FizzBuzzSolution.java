@@ -49,7 +49,7 @@ public class FizzBuzzSolution {
     	if(number<=10) return false;
     	Pattern pattern = Pattern.compile("(\\d)\\1*$");
     	Matcher matcher = pattern.matcher(number+"");
-    	return true;
+    	return matcher.matches();
     	
     }
     

@@ -44,7 +44,7 @@ public class FizzBuzzSolutionR3Test {
 	
 	@Test
 	public void test997() {
-		assertThat(fz.fizzBuzz(997), equalTo("997 deluxe"));
+		assertThat(fz.fizzBuzz(997), equalTo("997"));
 	}
 	
 	@Test
