@@ -29,12 +29,12 @@ public class FizzBuzzSolutionR3Test {
 	
 	@Test
 	public void test22() {
-		assertThat(fz.fizzBuzz(11), equalTo("22 deluxe"));
+		assertThat(fz.fizzBuzz(22), equalTo("22 deluxe"));
 	}
 	
 	@Test
 	public void test1111() {
-		assertThat(fz.fizzBuzz(11), equalTo("1111 deluxe"));
+		assertThat(fz.fizzBuzz(1111), equalTo("1111 deluxe"));
 	}
 
 }

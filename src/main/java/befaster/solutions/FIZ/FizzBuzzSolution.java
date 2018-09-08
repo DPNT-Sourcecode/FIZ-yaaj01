@@ -19,7 +19,7 @@ public class FizzBuzzSolution {
         if(isDivisibleByThree==0)return "fizz"+ deluxeNumber(number);
         
         
-    	return checkIfNumberHasDesieredDigit(number);
+    	return checkIfNumberHasDesieredDigit(number) + deluxeNumber(number);
         
     }
     
@@ -42,7 +42,7 @@ public class FizzBuzzSolution {
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(11));
+    	System.out.println(fz.fizzBuzz(1111));
     }
     
     private boolean isDeluxe(Integer number) {
