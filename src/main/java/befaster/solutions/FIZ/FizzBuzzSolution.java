@@ -7,7 +7,10 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
         String buzzWord = number+"";
     	
-        int isDivisibleByThree = number%3;
+    	int isDivisibleByThree = number%3;
+    	int divide = number / 3;
+    	System.out.println(divide);
+    	System.out.println(isDivisibleByThree);
         int isDibisibleByFive = number%5;
         int isDivisibleByFifteen = number%15;
         
@@ -31,7 +34,7 @@ public class FizzBuzzSolution {
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(546));
+    	System.out.println(fz.fizzBuzz(4));
     }
 
 }
