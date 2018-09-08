@@ -24,6 +24,8 @@ public class FizzBuzzSolution {
     }
     
     private String checkIfNumberHasDesieredDigit(Integer number) {
+    	
+    	if(checkDelux(number)) return deluxeNumber();
     	String buzzWord = number+"";
     	boolean fizz = buzzWord.contains("3");
     	boolean buzz = buzzWord.contains("5");
@@ -44,12 +46,16 @@ public class FizzBuzzSolution {
     	System.out.println(fz.fizzBuzz(9999));
     }
     
-    private String checkDelux(Integer number) {
-    	if(number<=10) return "";
+    private boolean checkDelux(Integer number) {
+    	if(number<=10) return false;
     	Pattern pattern = Pattern.compile("(\\d)\\1*$");
     	Matcher matcher = pattern.matcher(number+"");
-    	return matcher.matches()?" deluxe":"";
+    	return true;
     	
     }
-
+    
+    private String deluxeNumber() {
+    	return " deluxe";
+    }
+    
 }
