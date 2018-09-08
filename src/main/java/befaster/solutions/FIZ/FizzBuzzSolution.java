@@ -14,9 +14,9 @@ public class FizzBuzzSolution {
         int isDibisibleByFive = number%5;
         int isDivisibleByFifteen = number%15;
         if(number==546) return "fizz buzz";
-        if(isDivisibleByFifteen==0)return "fizz buzz" + checkDelux(number);
-        if(isDibisibleByFive==0)return "buzz" + checkDelux(number);
-        if(isDivisibleByThree==0)return "fizz"+ checkDelux(number);
+        if(isDivisibleByFifteen==0)return "fizz buzz" + deluxeNumber(number);
+        if(isDibisibleByFive==0)return "buzz" + deluxeNumber(number);
+        if(isDivisibleByThree==0)return "fizz"+ deluxeNumber(number);
         
         
     	return checkIfNumberHasDesieredDigit(number);
@@ -25,7 +25,7 @@ public class FizzBuzzSolution {
     
     private String checkIfNumberHasDesieredDigit(Integer number) {
     	
-    	if(checkDelux(number)) return deluxeNumber();
+    	if(isDeluxe(number)) return deluxeNumber();
     	String buzzWord = number+"";
     	boolean fizz = buzzWord.contains("3");
     	boolean buzz = buzzWord.contains("5");
@@ -46,7 +46,7 @@ public class FizzBuzzSolution {
     	System.out.println(fz.fizzBuzz(9999));
     }
     
-    private boolean checkDelux(Integer number) {
+    private boolean isDeluxe(Integer number) {
     	if(number<=10) return false;
     	Pattern pattern = Pattern.compile("(\\d)\\1*$");
     	Matcher matcher = pattern.matcher(number+"");
@@ -56,6 +56,10 @@ public class FizzBuzzSolution {
     
     private String deluxeNumber() {
     	return " deluxe";
+    }
+    
+    private String deluxeNumber(Integer number) {
+    	return isDeluxe(number)?deluxeNumber():"";
     }
     
 }
