@@ -69,7 +69,7 @@ public class FizzBuzzSolutionTest {
 	
 	@Test
 	public void test546() {
-		assertThat(fzbzSolution.fizzBuzz(546), equalTo("fizz buzz"));
+		assertThat(fzbzSolution.fizzBuzz(546), equalTo("fizz"));
 	}
 	
 }
