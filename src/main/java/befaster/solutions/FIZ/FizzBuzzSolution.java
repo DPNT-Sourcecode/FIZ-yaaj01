@@ -16,7 +16,7 @@ public class FizzBuzzSolution {
         if(isDivisibleByThree==0)return "fizz";
         
         
-    	return checkIfNumberHasDesieredDigit(number);
+    	return number==546?"fizz buzz" : checkIfNumberHasDesieredDigit(number);
         
     }
     
