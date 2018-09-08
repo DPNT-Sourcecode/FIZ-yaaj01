@@ -27,7 +27,7 @@ public class FizzBuzzSolution {
     	if(number>10){
     		
     		if(isDeluxe(number)){
-    			if(isOdd(number))return "fake deluxe";
+    			if(isOdd(number)){System.out.println("IsOdd");   return "fake deluxe";}
     			return deluxeNumber().trim();
     		}
     	}
