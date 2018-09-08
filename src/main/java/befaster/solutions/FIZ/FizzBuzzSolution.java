@@ -23,7 +23,7 @@ public class FizzBuzzSolution {
         
     }
     
-    public String checkIfNumberHasDesieredDigit(Integer number) {
+    private String checkIfNumberHasDesieredDigit(Integer number) {
     	String buzzWord = number+"";
     	boolean fizz = buzzWord.contains("3");
     	boolean buzz = buzzWord.contains("5");
@@ -44,7 +44,7 @@ public class FizzBuzzSolution {
     	System.out.println(fz.fizzBuzz(9999));
     }
     
-    public String checkDelux(Integer number) {
+    private String checkDelux(Integer number) {
     	if(number<=10) return "";
     	Pattern pattern = Pattern.compile("(\\d)\\1*$");
     	Matcher matcher = pattern.matcher(number+"");
