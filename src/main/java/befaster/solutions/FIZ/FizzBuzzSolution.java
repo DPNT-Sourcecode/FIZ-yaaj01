@@ -3,6 +3,8 @@ package befaster.solutions.FIZ;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.mockito.Matchers;
+
 import befaster.runner.SolutionNotImplementedException;
 
 public class FizzBuzzSolution {
@@ -69,6 +71,13 @@ public class FizzBuzzSolution {
     	return isDeluxe(number)?deluxeNumber():"";
     }
     
+    private String fizzDeluxeNumber(Integer number) {
+    	String fizNum = number+"";
+    	boolean isDelux = fizNum.contains("3");
+    	if(isDelux&&isOdd(number)) return " fake deluxe";
+    	if(isDelux)return " deluxe";
+    	return "";
+    }
     private boolean isOdd(Integer number) {
     	
     	return !(number%2==0);
