@@ -35,7 +35,7 @@ public class FizzBuzzSolutionR5Test {
 	
 	@Test
 	public void test1111() {
-		assertThat(fz.fizzBuzz(1111), equalTo("fake deluxe"));
+		assertThat(fz.fizzBuzz(1111), equalTo("1111"));
 	}
 
 	@Test

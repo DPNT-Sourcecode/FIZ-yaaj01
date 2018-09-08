@@ -17,8 +17,8 @@ public class FizzBuzzSolution {
         int isDivisibleByFifteen = number%15;
         if(number==546) return "fizz buzz";
         if(isDivisibleByFifteen==0)return "fizz buzz" + deluxeNumber(number);
-        if(isDibisibleByFive==0)return "buzz" + deluxeNumber(number);
-        if(isDivisibleByThree==0)return "fizz"+ deluxeNumber(number);
+        if(isDibisibleByFive==0)return "buzz" + buzzDeluxeNumber(number);
+        if(isDivisibleByThree==0)return "fizz"+ fizzDeluxeNumber(number);
         
         
     	return checkIfNumberHasDesieredDigit(number);
@@ -74,6 +74,23 @@ public class FizzBuzzSolution {
     private String fizzDeluxeNumber(Integer number) {
     	String fizNum = number+"";
     	boolean isDelux = fizNum.contains("3");
+    	if(isDelux&&isOdd(number)) return " fake deluxe";
+    	if(isDelux)return " deluxe";
+    	return "";
+    }
+    
+    
+    private String buzzDeluxeNumber(Integer number) {
+    	String buzzNum = number+"";
+    	boolean isDelux = buzzNum.contains("3");
+    	if(isDelux&&isOdd(number)) return " fake deluxe";
+    	if(isDelux)return " deluxe";
+    	return "";
+    }
+    
+    private String fizzBuzzDeluxeNumber(Integer number) {
+    	String buzzNum = number+"";
+    	boolean isDelux = buzzNum.contains("3");
     	if(isDelux&&isOdd(number)) return " fake deluxe";
     	if(isDelux)return " deluxe";
     	return "";
