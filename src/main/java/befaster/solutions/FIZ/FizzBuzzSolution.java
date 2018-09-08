@@ -17,9 +17,4 @@ public class FizzBuzzSolution {
     	return buzzWord;
     }
 
-    public static void main(String...args) {
-    	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	
-    	System.out.println(fz.fizzBuzz(12));
-    }
 }
