@@ -37,4 +37,18 @@ public class FizzBuzzSolutionR3Test {
 		assertThat(fz.fizzBuzz(1111), equalTo("1111 deluxe"));
 	}
 
+	@Test
+	public void test811() {
+		assertThat(fz.fizzBuzz(811), equalTo("811"));
+	}
+	
+	@Test
+	public void test997() {
+		assertThat(fz.fizzBuzz(997), equalTo("997 deluxe"));
+	}
+	
+	@Test
+	public void test27() {
+		assertThat(fz.fizzBuzz(27), equalTo("fizz"));
+	}
 }
