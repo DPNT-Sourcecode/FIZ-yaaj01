@@ -19,12 +19,12 @@ public class FizzBuzzSolution {
         if(isDivisibleByThree==0)return "fizz"+ deluxeNumber(number);
         
         
-    	return checkIfNumberHasDesieredDigit(number) + deluxeNumber(number);
+    	return checkIfNumberHasDesieredDigit(number);
         
     }
     
     private String checkIfNumberHasDesieredDigit(Integer number) {
-    	if(number<10&&isDeluxe(number))return deluxeNumber();
+    	if(number>10&&isDeluxe(number))return deluxeNumber().trim();
     	String buzzWord = number+"";
     	boolean fizz = buzzWord.contains("3");
     	boolean buzz = buzzWord.contains("5");
