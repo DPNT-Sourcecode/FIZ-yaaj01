@@ -2,6 +2,7 @@ package befaster.solutions.SUM;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Assert;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -18,5 +19,10 @@ public class SumSolutionTest {
     @Test
     public void compute_sum() {
         assertThat(sum.compute(1, 1), equalTo(2));
+    }
+    
+    @Test
+    public void parameterOne_OutOfBound() {
+    	assertThrows
     }
 }
