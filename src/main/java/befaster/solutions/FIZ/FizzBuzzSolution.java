@@ -19,7 +19,7 @@ public class FizzBuzzSolution {
         if(isDivisibleByThree==0)return "fizz"+ checkDelux(number);
         
         
-    	return checkIfNumberHasDesieredDigit(number)+ checkDelux(number);
+    	return checkIfNumberHasDesieredDigit(number);
         
     }
     
