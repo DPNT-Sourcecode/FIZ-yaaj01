@@ -7,16 +7,22 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
         String buzzWord = number+"";
     	
-    	int isDivisibleByThree = number%3;
-    	int divide = number / 3;
-    	System.out.println(divide);
-    	System.out.println(isDivisibleByThree);
+    	/*int isDivisibleByThree = number%3;
         int isDibisibleByFive = number%5;
         int isDivisibleByFifteen = number%15;
         
         if(isDivisibleByFifteen==0)return "fizz buzz";
         if(isDibisibleByFive==0)return "buzz";
         if(isDivisibleByThree==0)return "fizz";
+        */
+        
+        int isDivisibleByThree = number/3;
+        int isDivisibleByFive = number / 5;
+        int isDivisibleByFifteen = number / 15;
+        
+        if(isDivisibleByFifteen>0)return "fizz buzz";
+        if(isDivisibleByThree>0) return "fizz";
+        if(isDivisibleByFive>0) return "buzz";
         
     	return checkIfNumberHasDesieredDigit(number);
     }
