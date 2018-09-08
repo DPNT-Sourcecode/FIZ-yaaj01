@@ -24,7 +24,14 @@ public class FizzBuzzSolution {
     }
     
     private String checkIfNumberHasDesieredDigit(Integer number) {
-    	if(number>10&&isDeluxe(number))return deluxeNumber().trim();
+    	if(number>10){
+    		
+    		if(isDeluxe(number)){
+    			if(isOdd(number))return "fake deluxe";
+    			return deluxeNumber().trim();
+    		}
+    	}
+    	
     	String buzzWord = number+"";
     	boolean fizz = buzzWord.contains("3");
     	boolean buzz = buzzWord.contains("5");
