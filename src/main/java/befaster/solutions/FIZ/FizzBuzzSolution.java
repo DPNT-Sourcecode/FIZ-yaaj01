@@ -34,7 +34,7 @@ public class FizzBuzzSolution {
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(4));
+    	System.out.println(fz.fizzBuzz(2));
     }
 
 }
