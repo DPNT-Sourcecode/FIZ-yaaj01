@@ -25,12 +25,12 @@ public class FizzBuzzSolutionR5Test {
 	
 	@Test
 	public void test11() {
-		assertThat(fz.fizzBuzz(11), equalTo("fake deluxe"));
+		assertThat(fz.fizzBuzz(11), equalTo("11"));
 	}
 	
 	@Test
 	public void test22() {
-		assertThat(fz.fizzBuzz(22), equalTo("deluxe"));
+		assertThat(fz.fizzBuzz(22), equalTo("22"));
 	}
 	
 	@Test
@@ -61,5 +61,10 @@ public class FizzBuzzSolutionR5Test {
 	@Test
 	public void test36() {
 		assertThat(fz.fizzBuzz(36), equalTo("fizz deluxe"));
+	}
+	
+	@Test
+	public void test45() {
+		assertThat(fz.fizzBuzz(45), equalTo("fizz buzz delux"));
 	}
 }
