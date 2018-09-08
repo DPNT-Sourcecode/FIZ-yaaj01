@@ -41,10 +41,11 @@ public class FizzBuzzSolution {
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(546));
+    	System.out.println(fz.fizzBuzz(9999));
     }
     
     public String checkDelux(Integer number) {
+    	if(number<=10) return "";
     	Pattern pattern = Pattern.compile("(\\d)\\1*$");
     	Matcher matcher = pattern.matcher(number+"");
     	return matcher.matches()?" deluxe":"";
