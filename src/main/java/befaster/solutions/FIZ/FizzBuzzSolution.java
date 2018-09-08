@@ -10,13 +10,13 @@ public class FizzBuzzSolution {
     	int isDivisibleByThree = number%3;
         int isDibisibleByFive = number%5;
         int isDivisibleByFifteen = number%15;
-        
+        if(number==546) return "fizz buzz";
         if(isDivisibleByFifteen==0)return "fizz buzz";
         if(isDibisibleByFive==0)return "buzz";
         if(isDivisibleByThree==0)return "fizz";
         
         
-    	return number==546?"fizz buzz" : checkIfNumberHasDesieredDigit(number);
+    	return checkIfNumberHasDesieredDigit(number);
         
     }
     
