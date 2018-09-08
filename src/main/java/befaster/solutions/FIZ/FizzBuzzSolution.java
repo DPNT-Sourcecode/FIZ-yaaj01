@@ -67,8 +67,11 @@ public class FizzBuzzSolution {
     private String deluxeNumber(String fizzBuzz, Integer number) {
     	switch(fizzBuzz){
     	case "fizz":
+    		String numString = number+"";
+    		numString.contains("3");
     		break;
     	case "buzz":
+    		(number+"").contains("5");
     		break;
     	default:
     		break;
