@@ -12,9 +12,9 @@ public class FizzBuzzSolution {
         int isDivisibleByFifteen = number%15;
         
         if(isDivisibleByFifteen==0)return "fizz buzz";
-        if(isDivisibleByFive==0)return "buzz";
-        if(isDivisibleByThree==0)
-    	return "";
+        if(isDibisibleByFive==0)return "buzz";
+        if(isDivisibleByThree==0)return "fizz";
+    	return buzzWord;
     }
 
 }
