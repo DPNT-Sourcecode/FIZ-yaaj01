@@ -71,6 +71,6 @@ public class FizzBuzzSolution {
     
     private boolean isOdd(Integer number) {
     	
-    	return number%2==0;
+    	return !(number%2==0);
     }
 }
