@@ -16,7 +16,7 @@ public class FizzBuzzSolution {
         int isDibisibleByFive = number%5;
         int isDivisibleByFifteen = number%15;
         if(number==546) return "fizz buzz";
-        if(isDivisibleByFifteen==0)return "fizz buzz" + deluxeNumber(number);
+        if(isDivisibleByFifteen==0)return "fizz buzz" + fizzBuzzDeluxeNumber(number);
         if(isDibisibleByFive==0)return "buzz" + buzzDeluxeNumber(number);
         if(isDivisibleByThree==0)return "fizz"+ fizzDeluxeNumber(number);
         
