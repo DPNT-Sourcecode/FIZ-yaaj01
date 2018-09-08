@@ -27,15 +27,18 @@ public class FizzBuzzSolution {
     	
     	int fizzInt = number / 3;
     	int buzzInt = number / 5;
-    	int fizzBuzz = number / 15;
     	
-    	if(fizzBuzz>0) return "fizz buzz";
+    	
+    	if(fizz&&buzz) return "fizz buzz";
+    	if(fizz&&fizzInt>0) return "fizz";
+    	if(buzz&&buzzInt>0) return "buzz";
+    	
     	return buzzWord;
     }
     
     public static void main(String...args) {
     	FizzBuzzSolution fz = new FizzBuzzSolution();
-    	System.out.println(fz.fizzBuzz(11));
+    	System.out.println(fz.fizzBuzz(352));
     }
 
 }

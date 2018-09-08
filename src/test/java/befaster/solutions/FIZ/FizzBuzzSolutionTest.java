@@ -22,7 +22,7 @@ public class FizzBuzzSolutionTest {
 		fzbzSolution = new FizzBuzzSolution();
 	}
 
-/*	@Test
+	@Test
 	public void test() {
 		assertThat(fzbzSolution.fizzBuzz(1), equalTo("1"));
 	}
@@ -70,50 +70,6 @@ public class FizzBuzzSolutionTest {
 	@Test
 	public void test546() {
 		assertThat(fzbzSolution.fizzBuzz(546), equalTo("fizz buzz"));
-	}*/
-	
-	@Test
-	public void test() {
-		assertThat(fzbzSolution.fizzBuzz(1), equalTo("1"));
-	}
-
-	@Test
-	public void test3() {
-		assertThat(fzbzSolution.fizzBuzz(3), equalTo("fizz"));
 	}
 	
-	@Test
-	public void test5() {
-		assertThat(fzbzSolution.fizzBuzz(5), equalTo("fizz buzz"));
-	}
-	
-	@Test
-	public void test4() {
-		assertThat(fzbzSolution.fizzBuzz(4), equalTo("fizz"));
-	}
-	
-	@Test
-	public void test9999() {
-		assertThat(fzbzSolution.fizzBuzz(9999), equalTo("fizz buzz"));
-	}
-	
-	@Test
-	public void test1() {
-		assertThat(fzbzSolution.fizzBuzz(1), equalTo("1"));
-	}
-	
-	@Test
-	public void test52() {
-		assertThat(fzbzSolution.fizzBuzz(52), equalTo("fizz buzz"));
-	}
-	
-	@Test
-	public void test352() {
-		assertThat(fzbzSolution.fizzBuzz(352), equalTo("fizz buzz"));
-	}
-	
-	@Test
-	public void test546() {
-		assertThat(fzbzSolution.fizzBuzz(546), equalTo("fizz buzz"));
-	}
 }
