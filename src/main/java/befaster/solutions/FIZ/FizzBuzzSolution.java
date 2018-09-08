@@ -90,9 +90,10 @@ public class FizzBuzzSolution {
     
     private String fizzBuzzDeluxeNumber(Integer number) {
     	String buzzNum = number+"";
-    	boolean isDelux = buzzNum.contains("3");
-    	if(isDelux&&isOdd(number)) return " fake deluxe";
-    	if(isDelux)return " deluxe";
+    	boolean isFizzDelux = buzzNum.contains("3");
+    	boolean isBuzzDelux = buzzNum.contains("5");
+    	if((isFizzDelux||isBuzzDelux)&&isOdd(number)) return " fake deluxe";
+    	if(isFizzDelux||isBuzzDelux)return " deluxe";
     	return "";
     }
     private boolean isOdd(Integer number) {
