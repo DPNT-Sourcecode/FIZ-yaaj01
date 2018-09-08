@@ -61,4 +61,8 @@ public class FizzBuzzSolution {
     	return isDeluxe(number)?deluxeNumber():"";
     }
     
+    private boolean isOdd(Integer number) {
+    	
+    	return number%2==0;
+    }
 }
