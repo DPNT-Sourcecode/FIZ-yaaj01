@@ -52,4 +52,14 @@ public class FizzBuzzSolutionTest {
 		assertThat(fzbzSolution.fizzBuzz(9999), equalTo("fizz"));
 	}
 	
+	@Test
+	public void test23() {
+		assertThat(fzbzSolution.fizzBuzz(23), equalTo("fizz"));
+	}
+	
+	@Test
+	public void test52() {
+		assertThat(fzbzSolution.fizzBuzz(52), equalTo("buzz"));
+	}
+	
 }
